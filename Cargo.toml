@@ -1,0 +1,12 @@
+[package]
+name = "windowsbar"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mlua = { version = "0.9.9", features = ["lua54", "vendored"] }
+windows = { version = "0.58.0", features = [
+    "Win32_Graphics_Gdi",
+    "Win32_System_LibraryLoader",
+    "Win32_UI_WindowsAndMessaging",
+]}
